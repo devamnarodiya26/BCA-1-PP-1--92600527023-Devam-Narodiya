@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <conio.h>
+
+#define PI 3.14159
+
+void main() {
+    float radius, area;
+    
+    // Clear the older output screen
+    clrscr();
+
+    // Step 1: Input value from user
+    printf("Enter the radius of the circle: ");
+    scanf("%f", &radius);
+
+    // Step 2: Find out Area of Circle
+    area = PI * radius * radius;
+
+    // Step 3: Display the result
+    printf("\nThe area of the circle is: %.2f", area);
+
+    // Hold the screen until you press a key
+    getch();
+}
